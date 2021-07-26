@@ -1,0 +1,10 @@
+.loc{
+    @include flexposition-center;
+    background-color: #eaeaea;
+    color: #666666;
+    width: 100%;
+    &__city{
+        margin-left: 13px;
+        font-weight: 500;
+    }   
+}
