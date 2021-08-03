@@ -1,5 +1,5 @@
 // Utils
-@import "utils/breakpoints"; 
+ 
 @import "utils/variables";
 @import "utils/mixins";
 // Components
@@ -12,7 +12,8 @@
 @import "base/fonctionnement";
 @import "base/restaurants";
 @import "base/entrees";   
-// Layout 
+// Layout
+@import "layout/breakpoints"; 
 @import "layout/header";
 @import "layout/footer";
 // Pages 
