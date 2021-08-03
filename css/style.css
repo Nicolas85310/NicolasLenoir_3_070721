@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("/fo/scss/fontawesome.scss");
+@media screen and (min-width: 600px) and (max-width: 1400px) {
+  .restaurants {
+    flex-direction: row;
+  }
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -91,13 +97,13 @@ body {
   flex-direction: column;
 }
 .fonct__title {
-  margin: 0;
+  margin: 20px 0 20px 10px;
 }
 .fonct__step {
   display: flex;
   align-items: center;
   background: #f6f6f6;
-  height: auto;
+  height: 70px;
   width: auto;
   margin: 10px 20px;
   border-radius: 20px;
@@ -112,7 +118,7 @@ body {
   background: #f1e5ff;
 }
 .fonct__step:hover i {
-  color: #9356dc;
+  color: #9356DC;
 }
 .fonct__number {
   background-color: #9356DC;
@@ -133,23 +139,23 @@ body {
 }
 
 .restaurants {
-  margin: 0;
+  margin: 0 0 30px 0;
   background: #f6f6f6;
   padding: 20px;
   max-width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  align-items: flex-start;
+}
+.restaurants__title {
+  margin: 30px 0px 10px 10px;
 }
 
-.restaurant__cards {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 1fr;
-  grid-gap: 20px;
-  padding: 20px;
+.restaurant__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 335px;
+  margin: 10px;
 }
 .restaurant__card {
   position: relative;
@@ -197,7 +203,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 90px;
+  height: 70px;
   border-radius: 0 0 20px 20px;
 }
 .restaurant__block-info {
@@ -205,7 +211,35 @@ body {
   margin-left: 20px;
 }
 .restaurant__block-info > :first-child {
-  font-weight: 700;
+  font-weight: 600;
+}
+.restaurant__block-heart {
+  padding-left: 30px;
+}
+.restaurant__block span {
+  color: black;
+  transition: color 2s ease-out;
+}
+.restaurant__block span .fas {
+  opacity: 0%;
+}
+.restaurant__block span:hover {
+  color: #9356DC;
+  cursor: pointer;
+}
+.restaurant__block span:hover .fas {
+  transition-property: opacity;
+  transition-duration: 2s;
+  opacity: 100%;
+}
+
+.back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 20px;
 }
 
 .blocklg {
@@ -232,7 +266,7 @@ body {
 }
 .footer__bloc {
   display: inline;
-  padding: 0 40px;
+  padding: 10px 20px;
   width: 100%;
   max-width: 1200px;
 }

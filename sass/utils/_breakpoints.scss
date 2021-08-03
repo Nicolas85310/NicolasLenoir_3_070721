@@ -1,0 +1,13 @@
+// breakpoints//
+
+@mixin tablette {
+    @media screen and (min-width: 600px) and (max-width: 1400px){
+        flex-direction: row;
+
+    }
+}
+.restaurants{
+@include tablette;   
+}
+    
+    

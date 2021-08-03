@@ -14,13 +14,13 @@
     display: flex;
     flex-direction: column ;
     &__title {
-        margin: 0;
+        margin: 20px 0 20px 10px;
     }
     &__step {
         display: flex;
         align-items: center;
         background: #f6f6f6;
-        height: auto;
+        height: 70px;
         width: auto;
         margin: 10px 20px;
         border-radius: 20px;
@@ -31,10 +31,10 @@
         background: #f1e5ff;      
            
         i {
-            @include icocol;      
+            color: $color-icons-fonctment;      
                  
-        } 
-    }
+          } 
+      }
 }
         &__number {
                 background-color: $color-primary;
