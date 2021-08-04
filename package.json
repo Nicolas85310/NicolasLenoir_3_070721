@@ -1,0 +1,24 @@
+{
+  "name": "nicolaslenoir_3_070721",
+  "version": "1.0.0",
+  "description": "NicolasLenoir_3_070721",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css",
+    "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nicolas85310/NicolasLenoir_3_070721.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+
+
+  "bugs": {
+    "url": "https://github.com/Nicolas85310/NicolasLenoir_3_070721/issues"
+  },
+  "homepage": "https://github.com/Nicolas85310/NicolasLenoir_3_070721#readme"
+}

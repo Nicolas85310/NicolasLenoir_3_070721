@@ -1,0 +1,55 @@
+// breakpoints//
+@media screen and (min-width: 600px) {
+    .restaublock {
+        
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .restaublock {
+    .restaurant {
+        &__container {
+            
+            width: 44%;      
+        }
+    }
+}
+    .fonct__step {
+        width: 100%;
+    }
+    .fonct__steps {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .footer {
+        &__bloc {
+            margin-bottom: 15px;
+            &-links {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                max-width: 900px;
+            }
+        }
+    }
+} 
+
+
+@media screen and (min-width: 1000px) {
+    .restaublock {
+        
+        flex-direction: row;
+        
+    }
+    .restaublock {
+    .restaurant {
+        &__container {
+            
+            width: 21%;      
+        }
+    }
+}
+}
+

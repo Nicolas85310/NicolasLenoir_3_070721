@@ -1,0 +1,40 @@
+@mixin btn{
+    background: $grad;
+    color: white;
+    opacity: 1;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);  
+
+}
+
+@mixin btn-hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);    
+}
+
+//changement progressive couleur du coeur
+
+@mixin heart-before {
+
+   color: black;
+   transition: color 2s ease-out;    
+}
+
+@mixin heart-after {
+
+    
+    color: #9356DC;
+    cursor: pointer;  
+}
+
+@mixin heart-full {
+              
+    transition-property: opacity;
+    transition-duration: 2s;
+    opacity: 100%;
+
+}  
+
