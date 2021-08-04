@@ -5,6 +5,7 @@
 // Components
 @import "components/buttons"; 
 // Base
+
 @import "base/fonts";
 @import "base/index";
 @import "base/localisation";
@@ -12,10 +13,10 @@
 @import "base/fonctionnement";
 @import "base/restaurants";
 @import "base/entrees";   
-// Layout
-@import "layout/breakpoints"; 
+// Layout 
 @import "layout/header";
 @import "layout/footer";
+@import "layout/breakpoints";
 // Pages 
 // Themes 
 // Vendors 
