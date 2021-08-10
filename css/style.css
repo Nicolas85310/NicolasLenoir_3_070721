@@ -233,13 +233,51 @@ body {
   opacity: 100%;
 }
 
-.back {
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  left: 10px;
-  top: 10px;
-  font-size: 20px;
+.imgmenu {
+  width: 100%;
+  height: 220px;
+}
+.imgmenu > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  margin-top: -40px;
+  width: 100%;
+  max-width: 1400px;
+  border-radius: 40px 40px 0 0;
+  background-color: #F6F6F6;
+}
+.menu__haut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+}
+.menu__heart {
+  padding-left: 20px;
+}
+.menu span {
+  color: black;
+  transition: color 2s ease-out;
+}
+.menu span .fas {
+  opacity: 0%;
+}
+.menu span:hover {
+  color: #9356DC;
+  cursor: pointer;
+}
+.menu span:hover .fas {
+  transition-property: opacity;
+  transition-duration: 2s;
+  opacity: 100%;
 }
 
 .blocklg {
@@ -248,7 +286,7 @@ body {
   align-items: center;
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
   position: relative;
-  height: 80px;
+  height: 55px;
   width: 100%;
 }
 .blocklg__logo {
@@ -258,7 +296,12 @@ body {
 }
 
 .back {
-  margin: 20px 0 0 20px;
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  left: 20px;
+  top: 15px;
+  font-size: 20px;
 }
 .back i {
   color: black;
