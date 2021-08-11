@@ -1,0 +1,62 @@
+// Animation Entrées,plats et desserts //
+
+@for $i from 1 through 9 {
+    #element-#{$i} {
+        animation-delay: 0.1s*$i;
+    }
+}
+
+// Animation validation circulaire //
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+  @keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(-50px);
+    }
+  }
+  
+ 
+  @keyframes opacity {
+    0% {
+              opacity: 0;
+    }
+    100% {
+              opacity: 1;
+    }
+  }
+
+  // Animation Loading spinner //
+
+@keyframes spinner {
+  0% {
+      visibility: visible;
+      opacity: 0.9;
+  }
+  70% {
+      opacity: 0.9;
+  }
+  100% {
+      opacity: 0;
+      visibility: hidden;
+  }
+}
+
+
+@keyframes bars {
+  0% {
+      transform: scaleY(0.5);
+  }
+  100% {
+      transform: scaleY(1.0);
+  }
+}

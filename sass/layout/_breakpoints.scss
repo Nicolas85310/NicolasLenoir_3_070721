@@ -1,4 +1,6 @@
 // breakpoints//
+
+// Index//
 @media screen and (min-width: 600px) {
     .restaublock {
         
@@ -53,3 +55,33 @@
 }
 }
 
+// Menus//
+@media screen and (min-width: 1100px) {
+    .menu {
+        margin-top: -60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu__bloc {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    .imgmenu__image {
+            margin-top: 0;
+        }
+        .footer {
+            &__bloc {
+                margin-bottom: 15px;
+                &-links {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    max-width: 900px;
+                }
+            }
+        }
+}    

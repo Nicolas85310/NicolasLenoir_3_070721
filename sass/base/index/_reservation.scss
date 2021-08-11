@@ -22,7 +22,7 @@
     @include btn;
     margin-top: 10px;
     &:hover {
-        @include btn-hover;
+    @include btn-hover;
     }
   }
 }
