@@ -38,7 +38,7 @@ body {
   background: #f6f6f6;
   width: 100%;
 }
-.pub_container {
+.pub__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,17 +46,17 @@ body {
   padding: 50px 20px 50px 0px;
   width: 100%;
 }
-.pub_title {
+.pub__title {
   max-width: 280px;
   text-align: center;
   margin: 0;
 }
-.pub_dsc {
+.pub__dsc {
   max-width: 280px;
   text-align: center;
   font-weight: 200;
 }
-.pub_btn {
+.pub__btn {
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
   opacity: 1;
@@ -65,7 +65,7 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
 }
-.pub_btn:hover {
+.pub__btn:hover {
   opacity: 0.8;
   cursor: pointer;
   transition: 0.3s;
