@@ -52,6 +52,7 @@ background-color: #F6F6F6;
     display: flex;
 justify-content: center;
 flex-direction: column;
+
         &__bloc {
             display: flex;
             
@@ -132,7 +133,7 @@ flex-direction: column;
                 font-weight: bold;
             }
         }
-        .menu__block-subtitle{font-size: 0.8em;}
+        &-subtitle{font-size: 0.8em;}
         
         &__price {
             padding-right: 20px;

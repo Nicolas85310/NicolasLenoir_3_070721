@@ -39,7 +39,7 @@
 } 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
     .restaublock {
         
         flex-direction: row;
@@ -56,7 +56,7 @@
 }
 
 // Menus//
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
     .menu {
         margin-top: -60px;
         display: flex;
@@ -66,10 +66,12 @@
     }
     .menu__bloc {
         display: flex;
-        flex-direction: row;
-        
-        
+        flex-direction: row;      
     }
+    .menu__list{
+        width: 30%;
+    }
+
     .imgmenu__image {
             margin-top: 0;
         }

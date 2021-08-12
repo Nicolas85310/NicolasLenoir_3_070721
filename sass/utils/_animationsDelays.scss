@@ -37,13 +37,22 @@
 
   // Animation Loading spinner //
 
+  @keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+  }
+
 @keyframes spinner {
   0% {
       visibility: visible;
-      opacity: 0.9;
+      opacity: 1;
   }
-  70% {
-      opacity: 0.9;
+  90% {
+      opacity: 1;
   }
   100% {
       opacity: 0;
@@ -52,11 +61,3 @@
 }
 
 
-@keyframes bars {
-  0% {
-      transform: scaleY(0.5);
-  }
-  100% {
-      transform: scaleY(1.0);
-  }
-}
