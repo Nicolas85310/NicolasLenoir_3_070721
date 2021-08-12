@@ -69,12 +69,25 @@
     transform: scaleY(1);
   }
 }
+@keyframes voile {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes spinner {
   0% {
     visibility: visible;
     opacity: 1;
   }
-  90% {
+  70% {
     opacity: 1;
   }
   100% {
@@ -82,58 +95,35 @@
     visibility: hidden;
   }
 }
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  background: #f6f6f6;
+@keyframes wheelHueColor {
+  from, to {
+    filter: invert(37%) sepia(86%) saturate(882%) hue-rotate(236deg) brightness(90%) contrast(91%);
+    transform: scale(0.25) rotate(1500deg);
+  }
+  50% {
+    filter: invert(93%) sepia(6%) saturate(1826%) hue-rotate(105deg) brightness(93%) contrast(89%);
+    transform: scale(1);
+  }
+  100% {
+    filter: invert(85%) sepia(43%) saturate(5342%) hue-rotate(284deg) brightness(101%) contrast(106%);
+    transform: scale(1.5);
+  }
+}
+/*           spinners          */
+.container {
+  height: 100%;
+  background: white;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  animation: voile 3s linear;
+  visibility: hidden;
 }
 
-* a {
-  text-decoration: none;
-  color: white;
-}
-
-.main {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-/*.spinner {
-    height: 100%;
-    background: white;
-    margin: auto;
-    position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    z-index: 20;
-    animation: spinner 2s linear ;
-    visibility: hidden;
-    &__border {
-        @include flexposition-center;
-        border: 10px solid transparent;
-        border-top: 10px solid $color-primary;
-        border-bottom: 10px solid $color-secondary;
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin: auto;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        animation: spinner-border 2s linear ;
-        z-index: 10;
-        visibility: hidden;
-    }
-    &__center {
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-color: $color-tertiary;
-
-    }
-}*/
 .load {
   display: flex;
   justify-content: space-evenly;
@@ -145,10 +135,13 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 20;
+  z-index: 10;
   animation: spinner 3s linear;
+  visibility: hidden;
 }
 .load__bar {
+  display: none;
+  z-index: 10;
   background-color: #9356DC;
   height: 100%;
   width: 3vh;
@@ -168,6 +161,30 @@ body {
 }
 .load__bar--5 {
   animation-delay: 500ms;
+}
+.load .ohmyfood {
+  z-index: 10;
+  animation: wheelHueColor 3s infinite;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+* a {
+  text-decoration: none;
+  color: white;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .loc {
