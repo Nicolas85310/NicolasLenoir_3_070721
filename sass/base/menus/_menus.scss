@@ -50,13 +50,11 @@ background-color: #F6F6F6;
 
 &__liste {
     display: flex;
-justify-content: center;
-flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
 
         &__bloc {
             display: flex;
-            
-            justify-content: center;
             flex-direction: column;
         }
     

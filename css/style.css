@@ -390,7 +390,7 @@ body {
   opacity: 0%;
 }
 .restaublock .restaurant__block span:hover {
-  color: #9356dc;
+  color: #9356DC;
   cursor: pointer;
 }
 .restaublock .restaurant__block span:hover .fas {
@@ -438,7 +438,7 @@ body {
   opacity: 0%;
 }
 .menu span:hover {
-  color: #9356dc;
+  color: #9356DC;
   cursor: pointer;
 }
 .menu span:hover .fas {
@@ -453,7 +453,6 @@ body {
 }
 .menu__liste__bloc {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 .menu__liste__title h3 {
