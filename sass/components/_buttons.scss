@@ -24,7 +24,8 @@
 }
 
 @mixin heart-after {
-    color: #9356DC;
+    background: linear-gradient(180deg, #9356dc, #a659dc, #b75ddc, #c862dc, #d767db, #e56cdb, #f272da, #ff79da);
+    //color: #9356DC;
     cursor: pointer;  
 }
 

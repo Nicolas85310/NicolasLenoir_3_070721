@@ -50,7 +50,6 @@ background-color: #F6F6F6;
 
 &__liste {
     display: flex;
-    justify-content: center;
     flex-direction: column;
 
         &__bloc {
@@ -100,6 +99,7 @@ background-color: #F6F6F6;
         .validation__block {
             display: none;
             position: absolute;
+            overflow: hidden;
             background: $color-tertiary;
             border-radius: 0 15px 15px 0;
             right: 0px;

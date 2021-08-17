@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @import url("/fo/scss/fontawesome.scss");
 #element-1 {
@@ -313,15 +315,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
   margin: 10px 20px 60px 20px;
 }
 .restaublock .restaurant__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 85%;
-  margin: 5px 35px 10px 0px;
+  margin: 5px 0 10px 0;
 }
 .restaublock .restaurant__card {
   position: relative;
@@ -390,7 +390,7 @@ body {
   opacity: 0%;
 }
 .restaublock .restaurant__block span:hover {
-  color: #9356DC;
+  background: linear-gradient(180deg, #9356dc, #a659dc, #b75ddc, #c862dc, #d767db, #e56cdb, #f272da, #ff79da);
   cursor: pointer;
 }
 .restaublock .restaurant__block span:hover .fas {
@@ -438,7 +438,7 @@ body {
   opacity: 0%;
 }
 .menu span:hover {
-  color: #9356DC;
+  background: linear-gradient(180deg, #9356dc, #a659dc, #b75ddc, #c862dc, #d767db, #e56cdb, #f272da, #ff79da);
   cursor: pointer;
 }
 .menu span:hover .fas {
@@ -448,7 +448,6 @@ body {
 }
 .menu__liste {
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 .menu__liste__bloc {
@@ -499,6 +498,7 @@ body {
 .menu__liste__block .validation__block {
   display: none;
   position: absolute;
+  overflow: hidden;
   background: #99E2D0;
   border-radius: 0 15px 15px 0;
   right: 0px;
@@ -666,10 +666,10 @@ body {
   }
 
   .restaublock .restaurant__container {
-    width: 21%;
+    width: 20%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .menu {
     margin-top: -60px;
     display: flex;
@@ -678,13 +678,12 @@ body {
     justify-content: center;
   }
 
-  .menu__bloc {
+  .menu__liste {
     display: flex;
-    flex-direction: row;
+    width: 33.3%;
   }
-
-  .menu__list {
-    width: 30%;
+  .menu__liste .menu__liste__block {
+    width: 90%;
   }
 
   .imgmenu__image {
