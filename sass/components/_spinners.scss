@@ -1,0 +1,42 @@
+/*           spinners          */
+
+.container {
+    height: 100%;
+    background: white;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 20;
+    animation: voile 3s linear ;
+    visibility: hidden;
+}
+.load {
+    display: flex;
+    justify-content: space-evenly;
+    width: $size*10;
+    height: $size*7.5;
+    margin: auto;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+    animation: spinner 3s linear ;
+    visibility: hidden;
+    &__bar {
+        display: none; // activer ou désactiver le spinner barres
+        z-index: 10;
+        background-color: $color-primary;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur backwards infinite ease-in-out alternate;
+        @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+                
+            }
+        }
+    }
+    .ohmyfood {
+        z-index: 10;
+        animation: wheelHueColor 3s infinite;
+    }
+}

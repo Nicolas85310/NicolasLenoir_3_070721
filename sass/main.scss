@@ -1,22 +1,27 @@
 // Utils
- 
 @import "utils/variables";
 @import "utils/mixins";
-// Components
-@import "components/buttons"; 
-// Base
+@import "utils/animations";
 
-@import "base/fonts";
-@import "base/index";
-@import "base/localisation";
-@import "base/reservation";
-@import "base/fonctionnement";
-@import "base/restaurants";
-@import "base/entrees";   
+
+// Components
+@import "components/buttons";
+@import "components/spinners"; 
+
+// Base
+@import "base/index/fonts";
+@import "base/index/index";
+@import "base/index/localisation";
+@import "base/index/reservation";
+@import "base/index/fonctionnement";
+@import "base/index/restaurants";
+@import "base/menus/menus"; 
+
 // Layout 
 @import "layout/header";
 @import "layout/footer";
 @import "layout/breakpoints";
+
 // Pages 
 // Themes 
 // Vendors 

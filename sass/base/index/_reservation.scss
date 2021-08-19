@@ -1,28 +1,28 @@
 .pub{
     background: #f6f6f6;
     width: 100%;   
-&_container{
+&__container{
     @include flexposition-center;
     flex-direction: column;
     padding: 50px 20px 50px 0px;
     width: 100%;
 }
-&_title {
+&__title {
     max-width: 280px;
     text-align: center;
     margin: 0;  
 }
-&_dsc{
+&__dsc{
     max-width: 280px;
     text-align: center;
     font-weight: 200;
       
 }
-&_btn{
+&__btn{
     @include btn;
     margin-top: 10px;
     &:hover {
-        @include btn-hover;
+    @include btn-hover;
     }
   }
 }

@@ -1,0 +1,87 @@
+
+// Animation Entrées,plats et desserts //
+
+@for $i from 1 through 10 {
+    #element-#{$i} {
+        animation-delay: 0.1s*$i;
+    }
+}
+
+// Animation validation circulaire //
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+  @keyframes slide-left {
+    0% {
+              transform: scaleX(0);
+    }
+    100% {
+              transform: scaleX(1);
+    }
+  }
+  
+ 
+  @keyframes opacity {
+    0% {
+              opacity: 0;
+    }
+    100% {
+              opacity: 1;
+    }
+  }
+
+  // Animation Loading spinner //
+
+  @keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+  }
+
+  @keyframes voile {
+    0% {
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70% {
+        opacity: 0.9;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes wheelHueColor {
+  from, to { filter: invert(37%) sepia(86%) saturate(882%) hue-rotate(236deg) brightness(90%) contrast(91%);
+           transform: scale(0.25) rotate(1500deg) ; }
+  50%      { filter: invert(93%) sepia(6%) saturate(1826%) hue-rotate(105deg) brightness(93%) contrast(89%);
+           transform:  scale(1);}
+  100%     { filter: invert(85%) sepia(43%) saturate(5342%) hue-rotate(284deg) brightness(101%) contrast(106%);
+           transform:  scale(1.50);}  
+}
+

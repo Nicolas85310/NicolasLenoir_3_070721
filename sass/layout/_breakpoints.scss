@@ -1,5 +1,7 @@
 // breakpoints//
-@media screen and (min-width: 600px) {
+
+// Index//
+@media screen and (min-width: 550px) {
     .restaublock {
         
         flex-direction: row;
@@ -9,7 +11,7 @@
     .restaurant {
         &__container {
             
-            width: 44%;      
+            width: 46%;      
         }
     }
 }
@@ -37,19 +39,53 @@
 } 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1100px) {
     .restaublock {
         
-        flex-direction: row;
+        flex-direction: row; 
         
     }
     .restaublock {
     .restaurant {
         &__container {
             
-            width: 21%;      
+            width: 30%;      
         }
     }
 }
 }
 
+// Menus//
+@media screen and (min-width: 1050px) {
+    .menu {
+        margin-top: -60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .menu__haut{width: 100%;}
+    .menu__liste {
+        display: flex;
+        width: 33.3%;
+         
+    
+    .menu__liste__block{
+        width: 90%;
+    }
+    }
+    .imgmenu__image {
+            margin-top: 0;
+        }
+        .footer {
+            &__bloc {
+                margin-bottom: 15px;
+                &-links {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    max-width: 900px;
+                }
+            }
+        }
+}    

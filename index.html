@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="fo/css/all.min.css" rel='stylesheet' type='text/css'>
   <link href="css/style.css" rel='stylesheet' type='text/css'>
+  
 
 
   <title>Accueil OhMyFood</title>
@@ -14,16 +15,33 @@
 
 <body>
 
+ <!-- choix des spinners--> 
+
+ <!-- spinner barres -->
+<div class="container">
+  <div class="load">
+      <div class="load__bar load__bar--1"></div>
+      <div class="load__bar load__bar--2"></div>
+      <div class="load__bar load__bar--3"></div>
+      <div class="load__bar load__bar--4"></div>
+      <div class="load__bar load__bar--5"></div>
+  </div>
+  <!-- spinner ohmyfood -->
+  <div class="load">
+    <img src="images/logo/ohmyfood@2x.svg" class="ohmyfood" alt="Bienvenue sur ohmyfood">
+</div>
+</div>
+              <!--HEADER-->
   <header>
     <div class="blocklg">
-      <a href="../index.html">
+      <a href="./index.html">
         <h1 class="blocklg__logo">ohmyfood</h1>
       </a>
     </div>
   </header>
 
   <main class="main">
-
+    <i class="fas fa-heartfull"></i>
     <!-- localisation -->
     <div class="loc">
       <div class="loc__icon">
@@ -36,11 +54,11 @@
 
     <!-- Réservation -->
     <section class="pub">
-      <div class="pub_container">
-        <h2 class="pub_title">Réserver le menu qui vous convient</h2>
-        <p class="pub_dsc">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-        <div class="pub_btn">
-          <p>Explorer nos restaurants</p>
+      <div class="pub__container">
+        <h2 class="pub__title">Réserver le menu qui vous convient</h2>
+        <p class="pub__dsc">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+        <div class="pub__btn">
+          <a href="#restaurants"><p>Explorer nos restaurants</p></a>
         </div>
       </div>
     </section>
@@ -68,16 +86,18 @@
         </div>
       </div>
     </section>
-
-    <!-- Restaurants -->
     
-    <section class="restaurants">
+    <!-- Restaurants -->
+
+    <section class="restaurants" id="restaurants" >
       <h2 class="restaut__title">Restaurants</h2>
       <div class="restaublock">
 
-      <!-- container d'un restaurant-->
-      <div class="restaurant__container">
-        <a href="menus/A_la_francaise.html">
+        <!-- container d'un restaurant-->
+        
+        <figure class="restaurant__container">
+          <figcaption>
+          <a href="menus/la-palette-du-gout.html">
           <div class="restaurant__card">
             <div class="restaurant__card-image">
               <div class="restaurant__card-new">
@@ -85,7 +105,7 @@
               </div>
               <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
             </div>
-
+          
             <div class="restaurant__block">
               <div class="restaurant__block-info">
                 <div class="restaurant__block-name">La palette du goût</div>
@@ -100,91 +120,101 @@
               </div>
             </div>
           </div>
-      </div>
-      </a>
+        </a>
+      </figcaption>
+      </figure>
+   
 
-      <!-- container d'un restaurant-->
-      <div class="restaurant__container">
-        <a href="menus/A_la_francaise.html">
-          <div class="restaurant__card">
-            <div class="restaurant__card-image">
-              <div class="restaurant__card-new">
-                <p>Nouveau</p>
+        <!-- container d'un restaurant-->
+        <figure class="restaurant__container">
+          <figcaption>
+          <a href="menus/la-note-enchantee.html">
+            <div class="restaurant__card">
+              <div class="restaurant__card-image">
+                <div class="restaurant__card-new">
+                  <p>Nouveau</p>
+                </div>
+                <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="IMG" alt="La palette du goût">
               </div>
-              <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La palette du goût">
-            </div>
-
-            <div class="restaurant__block">
-              <div class="restaurant__block-info">
-                <div class="restaurant__block-name">La note enchantée</div>
-                <div class="restaurant__block-city">Charonne</div>
-              </div>
-              <div class="restaurant__block-heart">
-                <!-- superposition des deux icones coeur avec fa-satck-->
-                <span class="fa-stack fa-lg">
-                  <i class="far fa-heart fa-stack-1x"></i>
-                  <i class="fas fa-heart fa-stack-1x"></i>
-                </span>
-              </div>
-            </div>
-          </div>
-      </div>
-      </a>
-
-      <!-- container d'un restaurant-->
-      <div class="restaurant__container">
-        <a href="menus/A_la_francaise.html">
-          <div class="restaurant__card">
-            <div class="restaurant__card-image">
-              <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût">
-            </div>
-
-            <div class="restaurant__block">
-              <div class="restaurant__block-info">
-                <div class="restaurant__block-name">A la française</div>
-                <div class="restaurant__block-city">Cité Rouge</div>
-              </div>
-              <div class="restaurant__block-heart">
-                <!-- superposition des deux icones coeur avec fa-satck-->
-                <span class="fa-stack fa-lg">
-                  <i class="far fa-heart fa-stack-1x"></i>
-                  <i class="fas fa-heart fa-stack-1x"></i>
-                </span>
+              <div class="restaurant__block">
+                <div class="restaurant__block-info">
+                  <div class="restaurant__block-name">La note enchantée</div>
+                  <div class="restaurant__block-city">Charonne</div>
+                </div>
+                <div class="restaurant__block-heart">
+                  <!-- superposition des deux icones coeur avec fa-satck-->
+                  <span class="fa-stack fa-lg">
+                    <i class="far fa-heart fa-stack-1x"></i>
+                    <i class="fas fa-heart fa-stack-1x"></i>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
-      </a>
+          </a>
+        </figcaption>
+      </figure>
+        
 
-      <!-- container d'un restaurant-->
-      <div class="restaurant__container">
-        <a href="menus/A_la_francaise.html">
-          <div class="restaurant__card">
-            <div class="restaurant__card-image">
-              <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La palette du goût">
-            </div>
+        <!-- container d'un restaurant-->
+        <figure class="restaurant__container">
+          <figcaption>
+          <a href="menus/A_la_francaise.html">
+            <div class="restaurant__card">
+              <div class="restaurant__card-image">
+                <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="La palette du goût">
+              </div>
 
-            <div class="restaurant__block">
-              <div class="restaurant__block-info">
-                <div class="restaurant__block-name">Le délice des sens</div>
-                <div class="restaurant__block-city">Folie-Méricourt</div>
-              </div>
-              <div class="restaurant__block-heart">
-                <!-- superposition des deux icones coeur avec fa-satck-->
-                <span class="fa-stack fa-lg">
-                  <i class="far fa-heart fa-stack-1x"></i>
-                  <i class="fas fa-heart fa-stack-1x"></i>
-                </span>
+              <div class="restaurant__block">
+                <div class="restaurant__block-info">
+                  <div class="restaurant__block-name">A la française</div>
+                  <div class="restaurant__block-city">Cité Rouge</div>
+                </div>
+                <div class="restaurant__block-heart">
+                  <!-- superposition des deux icones coeur avec fa-satck-->
+                  <span class="fa-stack fa-lg">
+                    <i class="far fa-heart fa-stack-1x"></i>
+                    <i class="fas fa-heart fa-stack-1x"></i>
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
-      </div>
-      </a>
+          </a>
+        </figcaption>
+        </figure>
+        
+
+        <!-- container d'un restaurant-->
+        <figure class="restaurant__container">
+          <figcaption>
+          <a href="menus/le-delice-des-sens.html">
+            <div class="restaurant__card">
+              <div class="restaurant__card-image">
+                <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                  alt="La palette du goût">
+              </div>
+
+              <div class="restaurant__block">
+                <div class="restaurant__block-info">
+                  <div class="restaurant__block-name">Le délice des sens</div>
+                  <div class="restaurant__block-city">Folie-Méricourt</div>
+                </div>
+                <div class="restaurant__block-heart">
+                  <!-- superposition des deux icones coeur avec fa-satck-->
+                  <span class="fa-stack fa-lg">
+                    <i class="far fa-heart fa-stack-1x"></i>
+                    <i class="fas fa-heart fa-stack-1x"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </figcaption>
+        </figure>
+        
       </div>
     </section>
   </main>
-
-
+ 
   <!-- Footer -->
   <footer class="footer">
     <div class="footer__bloc">

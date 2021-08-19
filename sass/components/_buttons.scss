@@ -20,21 +20,18 @@
 @mixin heart-before {
 
    color: black;
-   transition: color 2s ease-out;    
+   transition: color 2s ease-out; 
+   
 }
 
-@mixin heart-after {
 
-    
-    color: #9356DC;
-    cursor: pointer;  
-}
 
 @mixin heart-full {
               
     transition-property: opacity;
     transition-duration: 2s;
     opacity: 100%;
+    
 
 }  
 
