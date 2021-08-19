@@ -39,6 +39,10 @@
   animation-delay: 0.9s;
 }
 
+#element-10 {
+  animation-delay: 1s;
+}
+
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -52,7 +56,7 @@
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(-50px);
+    transform: scaleX(1);
   }
 }
 @keyframes opacity {
@@ -241,7 +245,7 @@ body {
 }
 
 .fonct__container {
-  padding: 25px 0;
+  padding: 25px 0 50px 0;
   width: 100%;
   background: white;
   display: flex;
@@ -321,7 +325,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 5px 0 10px 0;
+  margin: 2%;
+  width: 100%;
 }
 .restaublock .restaurant__card {
   position: relative;
@@ -362,6 +367,10 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  object-position: 50% 90%;
+}
+.restaublock .restaurant__card-image .IMG {
+  object-position: 50% 60%;
 }
 .restaublock .restaurant__block {
   background: white;
@@ -389,9 +398,11 @@ body {
 .restaublock .restaurant__block span .fas {
   opacity: 0%;
 }
-.restaublock .restaurant__block span:hover {
-  background: linear-gradient(180deg, #9356dc, #a659dc, #b75ddc, #c862dc, #d767db, #e56cdb, #f272da, #ff79da);
-  cursor: pointer;
+.restaublock .restaurant__block span:hover i::before {
+  font-size: 25px;
+  color: transparent;
+  background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
+  -webkit-background-clip: text;
 }
 .restaublock .restaurant__block span:hover .fas {
   transition-property: opacity;
@@ -418,17 +429,18 @@ body {
 }
 .menu__haut {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 99%;
   height: 70px;
   margin: 15px 0 20px 0;
 }
 .menu__title {
   font-family: "Shrikhand", cursive;
+  margin-left: 20px;
 }
 .menu__heart {
-  padding-left: 20px;
+  margin-right: 20px;
 }
 .menu span {
   color: black;
@@ -437,9 +449,11 @@ body {
 .menu span .fas {
   opacity: 0%;
 }
-.menu span:hover {
-  background: linear-gradient(180deg, #9356dc, #a659dc, #b75ddc, #c862dc, #d767db, #e56cdb, #f272da, #ff79da);
-  cursor: pointer;
+.menu span:hover i::before {
+  font-size: 25px;
+  color: transparent;
+  background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
+  -webkit-background-clip: text;
 }
 .menu span:hover .fas {
   transition-property: opacity;
@@ -453,10 +467,11 @@ body {
 .menu__liste__bloc {
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 .menu__liste__title h3 {
   position: relative;
-  font-weight: 400;
+  font-weight: 300;
   text-transform: uppercase;
   margin: 0 20px 15px 20px;
 }
@@ -477,7 +492,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
+  width: auto;
   height: 70px;
   border-radius: 15px;
   background-color: white;
@@ -512,7 +527,7 @@ body {
   animation: rotate 0.5s both;
 }
 .menu__block__cont {
-  margin-left: 20px;
+  margin-left: 10px;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -526,6 +541,8 @@ body {
 }
 .menu__block-subtitle {
   font-size: 0.8em;
+  font-weight: 300;
+  margin-top: 5px;
 }
 .menu__block__price {
   padding-right: 20px;
@@ -556,10 +573,11 @@ body {
 }
 
 .blocklg {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
   position: relative;
   height: 55px;
   width: 100%;
@@ -629,14 +647,14 @@ body {
   font-weight: bold;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
   .restaublock {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .restaublock .restaurant__container {
-    width: 44%;
+    width: 46%;
   }
 
   .fonct__step {
@@ -666,7 +684,7 @@ body {
   }
 
   .restaublock .restaurant__container {
-    width: 20%;
+    width: 30%;
   }
 }
 @media screen and (min-width: 1050px) {
@@ -676,6 +694,10 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .menu__haut {
+    width: 100%;
   }
 
   .menu__liste {

@@ -18,19 +18,20 @@ background-color: #F6F6F6;
 
     &__haut{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 99%;
         height: 70px;
         margin: 15px 0 20px 0;
     }
 
     &__title{
         font-family: 'Shrikhand', cursive;
+        margin-left: 20px;
     }
 
     &__heart {
-        padding-left: 20px;
+        margin-right: 20px;
         }
         & span{
          
@@ -39,12 +40,18 @@ background-color: #F6F6F6;
         {opacity: 0%;}
         
         &:hover {
-            @include heart-after;
+            i::before {
+                font-size: 25px;
+                color:  transparent;
+                background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
+                -webkit-background-clip: text;
+            }
+            
             .fas {
                @include heart-full;
              
             }  
-        }
+        }    
     }
 
 
@@ -55,12 +62,13 @@ background-color: #F6F6F6;
         &__bloc {
             display: flex;
             flex-direction: column;
+            margin-bottom: 40px;
         }
     
     &__title {
         & h3 {
             position: relative;
-            font-weight: 400;
+            font-weight: 300;
             text-transform: uppercase;
             margin: 0 20px 15px 20px;
             &::after {
@@ -81,7 +89,7 @@ background-color: #F6F6F6;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 90%;
+        width: auto;
         height: 70px;
         border-radius: 15px;
         background-color: white ;
@@ -117,7 +125,7 @@ background-color: #F6F6F6;
 
     &__block {
         &__cont {
-            margin-left: 20px;
+            margin-left: 10px;
             white-space: nowrap;
             overflow: hidden;
             & p {
@@ -125,13 +133,18 @@ background-color: #F6F6F6;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 
+                
             }
             
             &-title {
                 font-weight: bold;
             }
         }
-        &-subtitle{font-size: 0.8em;}
+        &-subtitle{
+            font-size: 0.8em;
+            font-weight: 300;
+            margin-top: 5px;
+        }
         
         &__price {
             padding-right: 20px;

@@ -1,7 +1,7 @@
 
 // Animation Entrées,plats et desserts //
 
-@for $i from 1 through 9 {
+@for $i from 1 through 10 {
     #element-#{$i} {
         animation-delay: 0.1s*$i;
     }
@@ -22,7 +22,7 @@
               transform: scaleX(0);
     }
     100% {
-              transform: scaleX(-50px);
+              transform: scaleX(1);
     }
   }
   

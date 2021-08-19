@@ -1,7 +1,7 @@
 // breakpoints//
 
 // Index//
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
     .restaublock {
         
         flex-direction: row;
@@ -11,7 +11,7 @@
     .restaurant {
         &__container {
             
-            width: 44%;      
+            width: 46%;      
         }
     }
 }
@@ -49,7 +49,7 @@
     .restaurant {
         &__container {
             
-            width: 20%;      
+            width: 30%;      
         }
     }
 }
@@ -64,6 +64,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .menu__haut{width: 100%;}
     .menu__liste {
         display: flex;
         width: 33.3%;
