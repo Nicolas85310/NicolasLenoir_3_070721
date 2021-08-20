@@ -399,7 +399,7 @@ body {
   opacity: 0%;
 }
 .restaublock .restaurant__block span:hover i::before {
-  font-size: 25px;
+  font-size: 22px;
   color: transparent;
   background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
   -webkit-background-clip: text;
@@ -450,7 +450,7 @@ body {
   opacity: 0%;
 }
 .menu span:hover i::before {
-  font-size: 25px;
+  font-size: 22px;
   color: transparent;
   background-image: linear-gradient(360deg, #FF79DA 20%, #9356DC 100%);
   -webkit-background-clip: text;
